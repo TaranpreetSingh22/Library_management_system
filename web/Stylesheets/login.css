@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+section .login_form {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+    height: 300px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+
+
+section .login_form form {
+    width: 100%;
+    height: 100%;
+}
+
+.login_form div {
+    font-size: 1em;
+    height: 15%;
+    margin: 0.5em;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+#heading {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+#new_user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: white;
+}
+
+#new_user a {
+    color: aqua;
+    text-decoration:underline;
+}
+
+#login_btn {
+    font-size: 1.5em;
+}
+
+input::placeholder {
+    color: black;
+}
+
+
+@media screen and (min-width:768px) {
+    section .login_form {
+        margin-top: 10%;
+        margin-left: 40%;
+        width: 50%;
+        height: 350px;
+        margin-bottom: 10%;
+    }  
+
+}
+
+@media screen and (min-width:1024px) {
+    section .login_form {
+        width: 50%;
+        height: 400px;
+        margin-top: 10%;
+    }  
+}
+
+@media screen and (min-width:1440px) {
+    section .login_form {
+        width: 20%;
+        margin-top: 5%;
+        margin-left: 50%;
+        border-radius: 10px;
+    }  
+
+    header {
+        height: 12vh;
+    }
+
+    #title {
+        justify-content: center;
+    }
+}

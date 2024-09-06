@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="./stylesheets/stylesheet.css">
+</head>
+<body>
+    <div id="changebg1">
+        <img src="./images/bg1.jpg" id="changebg" />
+    </div>
+    <header>
+        <div id="logo">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+   
+        <div id="title">
+           <span>Welcome To The Library</span>
+        </div>
+   
+        <div class="desktop_menu">
+           <div>
+              <a href="./admin_login.html">Admin Login</a>
+           </div>
+           <div>
+            <a href="./index.html">User Login</a>
+         </div>
+           <div>
+              <a href="./About.html">About</a>
+           </div>
+           <div>
+              <a href="./contact.html">Contact</a>
+           </div>
+        </div>
+        <div id="menu_bar">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+        </div>
+        
+        <div id="mobile_menu_list">
+          <ul>
+            <li><a href="./admin_login.html">Admin Login</a></li>
+            <li><a href="./index.html">User Login</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+   
+    <section>
+        <div class="login_form">
+            <form action="AdminLoginServlet" method="POST">
+                <div id="heading">
+                    <span>ADMIN LOGIN</span>
+                </div>
+                <div>
+                    <input type="email" name="email_id" id="admin_email" placeholder="Email Address ">
+                </div>
+                <div>
+                    <input type="password" name="passwd" id="admin_password" placeholder="Password">
+                </div>
+                <div>
+                    <input type="submit" value="Login" id="login_btn">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+          <span>&#169; Copyright Terms</span>
+        </div>
+    </footer>
+
+</body>
+<script src="./scripts/script.js"></script>
+</html>

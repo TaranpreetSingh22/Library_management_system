@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #About {
+    width: 80%;
+    margin: 1px auto;
+  }
+  
+  #About div {
+    padding: 2%;
+  }
+  
+  #About div span {
+    font-size: 1.5em;
+  }
+  
+  p {
+    text-indent: 30px;
+    text-align: justify;
+  }
+  
+  #noIndent {
+    text-indent: 0px;
+  }
+
+  ul {
+    margin-left: 6%;
+  }
+
+  @media screen and (min-width:768px) {
+    #About div span {
+        font-size: 2.5em;
+      }
+    p {
+        font-size: 2em;
+      }
+
+      li {
+        font-size: 2em;
+      }
+
+      ul {
+        margin-left: 2%;
+      }
+    
+}
+
+@media screen and (min-width:1024px) {
+   
+}
+
+@media screen and (min-width:1440px) {
+   
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addbook</title>
+    <link rel="stylesheet" href="stylesheets/addbook.css">
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/login.css">
+</head>
+<body>
+    <div id="changebg1">
+        <img src="./images/bg1.jpg" id="changebg" />
+    </div>
+    <header>
+     <div id="logo">
+       <img src="./images/logo.png" alt="logo" />
+     </div>
+
+     <div id="title">
+        <span>Welcome To The Library</span>
+     </div>
+
+     <div class="desktop_menu">
+        <div>
+           <a href="./admin_dashboard.jsp">Admin Dashboard</a>
+        </div>
+        <div>
+            <a href="./addbook.html">Add Book</a>
+         </div>
+        <div>
+           <a href="MessageDisplayServlet">Messages</a>
+        </div>
+        <div>
+            <a href="AdminLogoutServlet">Logout</a>
+         </div>
+     </div>
+     <div id="menu_bar">
+       <div>
+       </div>
+       <div>
+       </div>
+       <div>
+       </div>
+     </div>
+     
+     <div id="mobile_menu_list">
+       <ul>
+         <li><a href="./admin_dashboard.jsp">Admin Dashboard</a></li>
+         <li><a href="./addbook.html">Add Book</a></li>
+         <li><a href="MessageDisplayServlet">Messages</a></li>
+         <li><a href="AdminLogoutServlet">Logout</a></li>
+       </ul>
+     </div>
+   </header>
+    
+    <section>
+        <div class="addbook_form">
+            <form action="AddBookServlet" enctype="multipart/form-data" method="post">
+                <div id="heading">
+                    <span>Add a New Book</span>
+                </div>
+                <div id="book_img">
+                    <div><span>Book Image</span></div>
+                    <div><input type="file" name="book_img" id="book_image" /></div>
+                </div>
+                <div>
+                    <input type="text" name="book_name" id="book_name" placeholder="Book Name">
+                </div>
+                <div>
+                    <input type="text" name="book_author" id="book_author" placeholder="Book Author">
+                </div>
+                <div id="textarea_div">
+                    <textarea name="book_desc" id="book_description"  rows="10" placeholder="Book Description"></textarea>
+                </div>
+                <div>
+                    <input type="Number" name="book_year" id="book_publish_year" placeholder="Publish Year">
+                </div>
+                <div>
+                    <input type="submit" value="Add">
+                </div>
+                <div>
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+          <span>&#169; Copyright Terms</span>
+        </div>
+    </footer>
+      
+</body>
+<script src="./scripts/script.js"></script>
+</html>

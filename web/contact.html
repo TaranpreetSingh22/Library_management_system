@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylesheets/contact.css">
+    <link rel="stylesheet" href="./stylesheets/stylesheet.css">
+</head>
+<body>
+    <div id="changebg1">
+        <img src="./images/bg1.jpg" id="changebg" />
+    </div>
+    <header>
+        <div id="logo">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+   
+        <div id="title">
+           <span>Welcome To The Library</span>
+        </div>
+   
+        <div class="desktop_menu">
+           <div>
+              <a href="./admin_login.html">Admin Login</a>
+           </div>
+           <div>
+            <a href="./index.html">User Login</a>
+         </div>
+           <div>
+              <a href="./About.html">About</a>
+           </div>
+           <div>
+              <a href="./contact.html">Contact</a>
+           </div>
+            <div>
+          <a href="UserLogoutServlet">Logout</a>
+       </div>
+        </div>
+        <div id="menu_bar">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+        </div>
+        
+        <div id="mobile_menu_list">
+          <ul>
+            <li><a href="./admin_login.html">Admin Login</a></li>
+            <li><a href="./index.html">User Login</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+    <section>
+        <div class="contact_form">
+            <form action="ContactDetailsServlet" method="post">
+                <div id="heading">
+                    <span>CONTACT</span>
+                </div>
+                <div>
+                    <input type="email" name="email_id" id="" placeholder="Email Address ">
+                </div>
+                <div>
+                    <input type="text" name="cid" id="" placeholder="College Id">
+                </div>
+                <div>
+                    <input type="number" name="phno" id="" placeholder="Phone Number">
+                </div>
+                <div>
+                    <input type="text" name="address" id="" placeholder="Address">
+                </div>
+                <div id="textarea_div">
+                    <textarea name="message" id="messages"  rows="9" placeholder="Enter Message"></textarea>
+                </div>
+                <div id="buttons">
+                    <div id="send_btn_div">
+                        <input type="submit" value="Send" id="send_btn">
+                    </div>
+                    <div id="reset_btn_div">
+                        <input type="reset" value="Reset" id="reset_btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+          <span>&#169; Copyright Terms</span>
+        </div>
+    </footer>
+    
+</body>
+<script src="./scripts/script.js"></script>
+</html>
